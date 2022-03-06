@@ -4,6 +4,7 @@ const sad = document.querySelector(`#sad`);
 const bored = document.querySelector(`#bored`);
 const confused = document.querySelector(`#confused`);
 
+emotion.innerText = store.getState().emotion;
 
 happy.addEventListener('click', () => {
     store.dispatch({ type: "HAPPY" });

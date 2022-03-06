@@ -11,7 +11,7 @@ const rootReducer = (state = INITIAL_STATE, action) => {
         case "CONFUSED":
             return { emotion: "⊙.☉"};
         default:
-            return state;
+            return state
     }
 }
 const store = Redux.createStore(rootReducer);
